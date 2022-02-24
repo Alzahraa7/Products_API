@@ -1,0 +1,21 @@
+// native base library to style : to use its component you should wrap it by its provider "NativeBaseProvider" => implement context
+// to make navigation I can use , React router libraryor react navigator 
+// to use stack navigator ypu need to actually navigate so you can implement it
+by button and push on it the path that you want to go to 
+//navigation object exist in the props that passed from screen component 
+// to make context create it "createContext" first then make its provider to make it share 
+// provider: wrapper of the application that i want to share the data with.
+// provider has attribute named "value" to contain any value you want to share with the embedded components in the provider
+// to use context in any embedded component use "useContext" hook and send in it which context you want.
+//We will put all shared data in one place whic is context file to make it cleaner
+// to update on th e shared date we can make the list of data that I will send in context also a state.
+// setting a state not synchrones operation (updated in the next cycle)
+// if the state is growing by time like (object inside oarray of objects inside...) , it's better to use Reducer instead of state
+// to use reducer distract it and take the (state and dispatch) and sind reducer in "useReducer" hook.
+// reducer: pure function that i will implement
+// how to update on state of reducer => by dispatch: this dispatch an action.
+// when i call dispatch function it will go to the reducer then reducer will take the state and the object that dispatch take (action)
+// return value of reducer will update the state
+// action -> dispatch -> reducer -> update the state
+
+props.navigation.navigate({name:'Details'})
